@@ -1,5 +1,13 @@
-import { Profile } from "./Profile";
-import userItems from '../user.json'
+import { Profile } from "./Profile/Profile";
+import { Statistics } from "./Statistics/Statistics";
+import { Friends } from "./FriendList/Friends";
+import { Transaction } from "./Transactions/TransactionHistory";
+
+import userItems from '../user.json';
+import dataElem from "../data.json";
+import friendsElem from '../friends.json';
+import transactElem from "../transactions.json";
+
 export const App = () => {
   return (
     <div
@@ -12,7 +20,10 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      <Profile items={ userItems} />
+      <Profile items={userItems} />
+      <Statistics data={dataElem} />
+      <Friends friends={friendsElem} />
+      <Transaction transactElem={transactElem}/>
     </div>
   );
 };
