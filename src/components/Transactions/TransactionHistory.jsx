@@ -1,11 +1,12 @@
 import { TableBody } from "./TableBody"
 import { TableHead } from "./TableHead"
+import {Wrap} from './TransactionHistory.styled'
 
 export const Transaction = ({transactElem}) => {
     return (
-        <table>
+        <Wrap>
             <TableHead />
             <TableBody transac={transactElem} />
-        </table>
+        </Wrap>
     )
 }

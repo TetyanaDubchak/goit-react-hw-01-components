@@ -1,11 +1,12 @@
+import { Img, Name, Text } from "./DescriptionContent.styled";
 
 export const DescrElements = ({ item: { username, tag, location, avatar } }) => {
     return (
         <div>
-            <img src={avatar} alt="" />
-            <p>{ username}</p>
-            <p>@{tag }</p>
-            <p>{ location}</p>
+            <Img src={avatar} alt="" />
+            <Name>{ username}</Name>
+            <Text>@{tag }</Text>
+            <Text>{ location}</Text>
         </div>
     )
 }

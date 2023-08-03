@@ -1,13 +1,14 @@
 import { StatElem } from "./StatListElem"
+import {List, Item} from './StatList.styled'
 
 export const StatList = ({data}) => {
     return (
-        <ul>
+        <List>
             {data.map(obj => (
-                <li key={obj.id}> 
+                <Item key={obj.id}> 
                     <StatElem element={obj}/>
-                </li>
+                </Item>
             ))}
-        </ul>
+        </List>
     )
 }

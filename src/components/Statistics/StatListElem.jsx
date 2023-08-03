@@ -1,9 +1,10 @@
+import {Text, Number } from './StatListElem.styled'
 
 export const StatElem = ({element}) => {
     return (
         <>
-            <span>{element.label}</span>
-            <span>{element.percentage}%</span>
+            <Text>{element.label}</Text>
+            <Number>{element.percentage}%</Number>
         </>
     )
 }

@@ -1,6 +1,10 @@
+import { Wrap, Text } from './Title.styled'
 
 export const Title = () => {
     return (
-        <h2>Upload stats</h2>
+        <Wrap>
+            <Text>Upload stats</Text>
+        </Wrap>
+        
     )
 }
