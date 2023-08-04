@@ -1,14 +1,15 @@
+import {Wrap, Row, Section} from './TableBody.styled'
 
 export const TableBody = ({transac}) => {
     return (
-        <tbody>
+        <Wrap>
             {transac.map(obj => (
-                <tr key={obj.id}> 
-                    <td>{obj.type}</td>
-                    <td>{obj.amount}</td>
-                    <td>{obj.currency}</td>
-                </tr>
+                <Row key={obj.id}> 
+                    <Section>{obj.type}</Section>
+                    <Section>{obj.amount}</Section>
+                    <Section>{obj.currency}</Section>
+                </Row>
             ))}
-        </tbody>
+        </Wrap>
     )
 }

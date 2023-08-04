@@ -6,6 +6,13 @@ export const Img = styled.img`
 `
 
 export const Text = styled.p`
-    width: 80px;
-    height: 80px;
+
+`
+
+export const Sign = styled.span`
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: ${props => (props.active === true ? 'green' : 'red')};
 `

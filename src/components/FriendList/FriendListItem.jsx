@@ -1,9 +1,9 @@
-import {Img, Text} from './FriendListItem.styled'
+import {Img, Text, Sign} from './FriendListItem.styled'
 
 export const FriendListElem = ({friends}) => {
     return (
         <>
-            <span></span>
+            <Sign active={friends.isOnline}></Sign>
             <Img src={friends.avatar} alt="User avatar" />
             <Text>{friends.name}</Text>
         </>

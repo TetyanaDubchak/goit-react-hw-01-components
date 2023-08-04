@@ -1,12 +1,12 @@
-
+import {Title, Row, Column} from './TableHead.styled'
 export const TableHead = () => {
     return (
-        <thead>
-            <tr>
-                <th>Type</th>
-                <th>Amount</th>
-                <th>Currency</th>
-            </tr>
-        </thead>
+        <Title>
+            <Row>
+                <Column>Type</Column>
+                <Column>Amount</Column>
+                <Column>Currency</Column>
+            </Row>
+        </Title>
     )
 }
