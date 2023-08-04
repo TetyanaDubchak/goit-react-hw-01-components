@@ -1,7 +1,5 @@
 import { Title, Row, Column } from './TableHead.styled'
 
-import PropTypes from 'prop-types';
-
 export const TableHead = () => {
     return (
         <Title>
