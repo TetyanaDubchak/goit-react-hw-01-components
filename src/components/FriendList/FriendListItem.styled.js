@@ -14,5 +14,5 @@ export const Sign = styled.span`
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: ${props => (props.active === true ? 'green' : 'red')};
+    background-color: ${props => (props.isonline === 'true' ? 'green' : 'red')};
 `

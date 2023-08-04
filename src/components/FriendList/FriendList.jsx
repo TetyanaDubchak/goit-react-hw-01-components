@@ -17,5 +17,5 @@ export const FriendList = ({friends}) => {
 }
 
 FriendList.propTypes = {
-    friends: PropTypes.object,
+    friends: PropTypes.array,
 }

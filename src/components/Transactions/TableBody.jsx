@@ -1,4 +1,6 @@
-import {Wrap, Row, Section} from './TableBody.styled'
+import { Wrap, Row, Section } from './TableBody.styled'
+
+import PropTypes from 'prop-types';
 
 export const TableBody = ({transac}) => {
     return (
@@ -12,4 +14,8 @@ export const TableBody = ({transac}) => {
             ))}
         </Wrap>
     )
+}
+
+TableBody.propTypes = {
+    transac: PropTypes.array,
 }

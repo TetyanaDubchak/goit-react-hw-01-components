@@ -1,4 +1,6 @@
-import {Text, Number } from './StatListElem.styled'
+import { Text, Number } from './StatListElem.styled'
+
+import PropTypes from 'prop-types';
 
 export const StatElem = ({element}) => {
     return (
@@ -7,4 +9,8 @@ export const StatElem = ({element}) => {
             <Number>{element.percentage}%</Number>
         </>
     )
+}
+
+StatElem.propTypes = {
+    element: PropTypes.object,
 }

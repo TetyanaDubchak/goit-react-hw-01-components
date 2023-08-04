@@ -1,5 +1,7 @@
 import { StatElem } from "./StatListElem"
-import {List, Item} from './StatList.styled'
+import { List, Item } from './StatList.styled'
+
+import PropTypes from 'prop-types';
 
 export const StatList = ({data}) => {
     return (
@@ -11,4 +13,8 @@ export const StatList = ({data}) => {
             ))}
         </List>
     )
+}
+
+StatList.propTypes = {
+    data: PropTypes.array,
 }

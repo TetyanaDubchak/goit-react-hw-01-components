@@ -1,5 +1,7 @@
 import { Img, Name, Text } from "./DescriptionContent.styled";
 
+import PropTypes from 'prop-types';
+
 export const DescrElements = ({ item: { username, tag, location, avatar } }) => {
     return (
         <div>
@@ -10,3 +12,11 @@ export const DescrElements = ({ item: { username, tag, location, avatar } }) => 
         </div>
     )
 }
+
+DescrElements.propTypes = {
+    username: PropTypes.string,
+    tag: PropTypes.string,
+    location: PropTypes.string,
+    avatar: PropTypes.string,
+}
+    

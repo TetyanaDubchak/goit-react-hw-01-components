@@ -1,4 +1,6 @@
-import {List, Item, Title, Number} from './StatsContent.styled'
+import { List, Item, Title, Number } from './StatsContent.styled'
+
+import PropTypes from 'prop-types';
 
 export const StatsElements = ({ item: { stats: { followers, views, likes } } }) => {
     return (
@@ -17,4 +19,10 @@ export const StatsElements = ({ item: { stats: { followers, views, likes } } }) 
             </Item>
         </List>
     )
+}
+
+StatsElements.propTypes = {
+    followers: PropTypes.number,
+    views: PropTypes.number,
+    likes: PropTypes.number,
 }

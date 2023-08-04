@@ -1,6 +1,8 @@
 import { DescrElements } from "./DescriptionContent"
 import { StatsElements } from "./StatsContent"
-import {Wrap} from './Profile.styled'
+import { Wrap } from './Profile.styled'
+
+import PropTypes from 'prop-types';
 
 export const Profile = ({items}) => {
     return (
@@ -10,4 +12,8 @@ export const Profile = ({items}) => {
         </Wrap>
         
     )
+}
+
+Profile.propTypes = {
+    items: PropTypes.object,
 }
