@@ -16,7 +16,7 @@ export const App = () => {
   return (
     <Wrapper>
       <Profile items={userItems} />
-      <Statistics data={dataElem} />
+      <Statistics title='Upload Stats' data={dataElem} />
       <Friends friends={friendsElem} />
       <Transaction transactElem={transactElem} />
       <GlobalStyle/>

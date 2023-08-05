@@ -3,7 +3,7 @@ import { List, Item } from './StatList.styled'
 
 import PropTypes from 'prop-types';
 
-export const StatList = ({data}) => {
+export const StatList = ({ data }) => {
     return (
         <List>
             {data.map(obj => (
@@ -18,3 +18,4 @@ export const StatList = ({data}) => {
 StatList.propTypes = {
     data: PropTypes.array,
 }
+
